@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset some basic styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Set fonts color variables */
+:root {
+	--font_white: hsl(0, 0%, 100%);
+	--font_green: hsl(75, 94%, 57%);
+	--font_grey700: hsl(0, 0%, 20%);
+	--font_grey800: hsl(0, 0%, 12%);
+	--font_grey900: hsl(0, 0%, 8%);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  min-height: 100lvh;
+
+	font-size: 14px;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+
+	color: var(--font_white);
+	background-color: var(--font_grey900);
+}
+
+.socialContainer {
+  border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 20px 20px;
+
+	background-color: var(--font_grey800);
+}
+
+.socialMain img{
+	width: 86px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+}
+
+.socialMain p{
+	font-weight: normal;
+	font-size: 0.9em;
+
+	margin: 20px 0px;
+}
+
+#location {
+	font-size: 0.9em;
+	font-weight: 700;
+
+	margin-top: 10px;
+
+	color: var(--font_green);
+}
+
+.socialLinks a{
+	display: block;
+	width: 250px;
+
+	text-decoration: none;
+
+	margin-top: 15px;
+	padding: 10px;
+
+	color: var(--font_white);
+	background-color: var(--font_grey700);
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+
+.socialLinks a:hover{
+	color: black;
+	background-color: var(--font_green);
+}
+
+.socialLinks a:focus-visible{
+	outline: 3px solid var(--font_green);
+}
